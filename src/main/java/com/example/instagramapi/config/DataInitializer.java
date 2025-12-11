@@ -66,5 +66,17 @@ public class DataInitializer implements CommandLineRunner {
                         .build()
         );
 
+        Post post3 = postRepository.save(Post.builder().content("sample post2").imageUrl("/uploads/sample1.jpg").user(test).build());
+        Post post4 = postRepository.save(Post.builder().content("sample post2").imageUrl("/uploads/sample2.jpg").user(test).build());
+        Post post5 = postRepository.save(Post.builder().content("sample post2").imageUrl("/uploads/sample1.jpg").user(test).build());
+        Post post6 = postRepository.save(Post.builder().content("sample post2").imageUrl("/uploads/sample2.jpg").user(test).build());
+        Post post7 = postRepository.save(Post.builder().content("sample post2").imageUrl("/uploads/sample1.jpg").user(test).build());
+        Post post8 = postRepository.save(Post.builder().content("sample post2").imageUrl("/uploads/sample2.jpg").user(test).build());
+        Post post9 = postRepository.save(Post.builder().content("sample post2").imageUrl("/uploads/sample1.jpg").user(test).build());
+        Post post10 = postRepository.save(Post.builder().content("sample post2").imageUrl("/uploads/sample2.jpg").user(test).build());
+        Post post11 = postRepository.save(Post.builder().content("sample post2").imageUrl("/uploads/sample1.jpg").user(test).build());
+        Post post12 = postRepository.save(Post.builder().content("sample post2").imageUrl("/uploads/sample2.jpg").user(test).build());
+        Post post13 = postRepository.save(Post.builder().content("sample post2").imageUrl("/uploads/sample1.jpg").user(test).build());
+
     }
 }
