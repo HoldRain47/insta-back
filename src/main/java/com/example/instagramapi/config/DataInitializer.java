@@ -19,6 +19,10 @@ public class DataInitializer implements CommandLineRunner {
 
     @Override
     public void run(String... args) throws Exception {
+        if (userRepository.count() > 0) {
+            return;
+        }
+
         // 사용자 생성
         String encodedPassword = passwordEncoder.encode("test1234");
 
